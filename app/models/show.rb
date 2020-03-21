@@ -3,5 +3,5 @@ class Show < ActiveRecord::Base
   belongs_to :network
   
   def actors_list 
-    self.
+    self.characters.collect{|char| char.full_name
 end
